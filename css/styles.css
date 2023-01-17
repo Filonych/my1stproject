@@ -1,0 +1,174 @@
+body
+{
+    font-family: 'Epilogue', sans-serif;
+}
+
+.header
+{
+    background-color:fff;
+    padding: 26px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.link
+{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    margin-right: 20px;
+    position: relative;
+    top: 3px; 
+
+}
+
+
+.logo__header
+{
+    text-decoration: none;
+    color: black;
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+
+}
+.backg
+{
+    background-color: #F9E6F0;
+    height: 538px;
+    display: flex;
+   
+}
+
+.wrap
+{
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-size: 17px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    width: 780px;
+    height: 297.52px;
+    margin: auto;
+    gap: 70px;
+}
+
+.img
+{
+    border: 1.5px solid #2D2D2D;
+}
+
+.name
+{
+    text-decoration-line: underline;
+    color: #2D2D2D;
+    margin: 0;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.job
+{
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-size: 17px;
+    line-height: 27px;
+    color: #2D2D2D; 
+    margin: 0;
+}
+
+.bio-text
+{
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-size: 17px;
+    line-height: 27px;
+    color: #2D2D2D; 
+    margin: 0;  
+}
+
+.body-info
+{
+    height: 640px;
+    background: #FFFFFF;
+    display: flex;
+}
+
+.body-wrap
+{
+    width: 880px;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.body-title
+{
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 1px;
+    color: #2B2B2B;
+}
+
+.col-text
+{
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 36px;
+    color: #F6DCE9;
+    background: #009379;
+    height: 36px;
+    margin: 0;
+}
+
+.sim-text1
+{
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 36px;
+    color: #2B2B2B;
+    margin: 0;
+}
+
+.sim-text2-wrap
+{
+    width: 880px;
+    height: 88px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.sim-text2
+{
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #2B2B2B;
+    margin: 0;
+
+
+}
+
+hr{
+    color: #E5E5E5;
+    width: 1080px;
+    height: 1.5px;
+    
+}
