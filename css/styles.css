@@ -162,13 +162,169 @@ body
     line-height: 26px;
     color: #2B2B2B;
     margin: 0;
-
-
 }
 
-hr{
-    color: #E5E5E5;
+hr
+{
+    border-color: #F3F3F3;
     width: 1080px;
-    height: 1.5px;
-    
+    height: 1px;
+}
+
+.footer
+{
+    height: 661px;
+    display: flex;
+    gap: 190px;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.contact-info
+{
+    width: 360px;
+    height: 313px;
+}
+
+.contact-title
+{
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 42px;
+}
+
+.contact-content
+{
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 27px;
+    margin-bottom: 60px;
+}
+
+.form
+{
+    width: 530px;
+    height: 529px;
+}
+
+input
+{
+    width: 530px;
+    height: 69px;
+    background: #F3F3F3;
+    border: none;
+    margin-bottom: 20px;
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 27px;
+    color: black;
+    box-sizing: border-box;
+    padding: 0 30px;
+}
+
+textarea
+{
+    width: 530px;
+    height: 231px;
+    background: #F3F3F3;
+    border: none;
+    resize: none;
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 27px;
+    color: black;
+    box-sizing: border-box;
+    padding: 21px 30px;
+}
+
+::placeholder
+{
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 27px;
+    color: black;
+}
+
+.submit
+{
+    width: 235px;
+    height: 80px;
+    background: #2D2D2D;
+    margin-top: 40px;
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.icons
+{
+    font-size: 36px;
+    width: 232px;
+    height: 36px;
+}
+
+.iconify
+{
+    margin-right: 4px;
+}
+
+.first
+{
+    height: 624px;
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.portfolio-title
+{
+    width: 557px;
+    height: 317px;
+}
+
+.branding
+{
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;   
+    margin: 0; 
+}
+
+.main_title
+{
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 90px;
+    margin: 40px 0;
+}
+
+.caption
+{
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 27px;
+    margin: 0;
 }
