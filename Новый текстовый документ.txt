@@ -1,0 +1,22 @@
+.backg
+{
+    background-color: #F9E6F0;
+    height: 538px;
+    display: flex;
+   
+}
+
+.wrap
+{
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-size: 17px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    width: 780px;
+    height: 297.52px;
+    margin: auto;
+    gap: 70px;
+}
+

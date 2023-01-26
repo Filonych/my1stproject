@@ -1,6 +1,17 @@
+p, h1, form, body
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
 body
 {
     font-family: 'Epilogue', sans-serif;
+    box-sizing: border-box;
 }
 
 .header
@@ -11,6 +22,13 @@ body
     justify-content: space-between;
 }
 
+@media (max-width: 800px) 
+{
+    .link 
+    {
+        display: none;
+    }
+}
 
 .link
 {
@@ -54,6 +72,22 @@ body
     height: 297.52px;
     margin: auto;
     gap: 70px;
+    padding: 0 30px;
+}
+
+@media (max-width: 800px) 
+{
+    .wrap
+    {
+        flex-direction: column;
+        align-items: normal;
+        justify-content: center;
+    }
+
+    .backg
+    {
+        height: 804.52px;
+    }
 }
 
 .img
@@ -97,18 +131,23 @@ body
     display: flex;
 }
 
-.body-wrap
+@media (max-width: 800px) 
 {
-    width: 880px;
-    height: 400px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
+    .body-info
+    {
+        height: 1090px;
+        padding: 0 30px;
+    }
 }
 
 .body-title
+{
+    max-width: 880px;
+    min-height: 400px;
+    margin: auto;
+}
+
+.body-title-text
 {
     font-family: 'Epilogue';
     font-style: normal;
@@ -117,43 +156,30 @@ body
     line-height: 36px;
     letter-spacing: 1px;
     color: #2B2B2B;
+    margin-bottom: 60px;
 }
 
-.col-text
+.table
+{
+    max-width: 880px;
+    margin: auto;
+}
+
+.odd
 {
     font-family: 'Epilogue';
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
-    line-height: 36px;
+    line-height: 26px;
     color: #F6DCE9;
     background: #009379;
     height: 36px;
     margin: 0;
+    text-align: left;
 }
 
-.sim-text1
-{
-    font-family: 'Epilogue';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 36px;
-    color: #2B2B2B;
-    margin: 0;
-}
-
-.sim-text2-wrap
-{
-    width: 880px;
-    height: 88px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-}
-
-.sim-text2
+.even
 {
     font-family: 'Epilogue';
     font-style: normal;
@@ -161,19 +187,32 @@ body
     font-size: 16px;
     line-height: 26px;
     color: #2B2B2B;
-    margin: 0;
+    margin: 0; 
+}
+
+td{
+    padding: 5px 0;
 }
 
 hr
 {
-    border-color: #F3F3F3;
+    border: none;
+    background-color: #9c9797;
     width: 1080px;
     height: 1px;
 }
 
+@media (max-width: 800px)
+{
+    hr
+    {
+        width: 242px;
+    }
+}
+
 .footer
 {
-    height: 661px;
+    min-height: 661px;
     display: flex;
     gap: 190px;
     flex-wrap: wrap;
@@ -181,10 +220,37 @@ hr
     justify-content: center;
 }
 
+@media (max-width: 800px) 
+{
+    .footer
+    {
+        height: 1104px;
+        padding: 0 30px;
+    }
+}
+
 .contact-info
 {
-    width: 360px;
-    height: 313px;
+    max-width: 360px;
+    min-height: 313px;
+}
+
+.f-container
+{
+    max-width: 1080px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+@media (max-width: 800px) {
+    .f-container
+    {
+        flex-direction: column;
+        padding: 0 30px;
+    }
+    
 }
 
 .contact-title
@@ -212,6 +278,15 @@ hr
     height: 529px;
 }
 
+@media (max-width: 800px) {
+    .form
+    {
+        width: 315px;
+        margin-top: 80px
+    }
+    
+}
+
 input
 {
     width: 530px;
@@ -229,7 +304,15 @@ input
     padding: 0 30px;
 }
 
-textarea
+@media (max-width: 800px) {
+    .input
+    {
+        width: 315px;
+    }
+    
+}
+
+.input-text
 {
     width: 530px;
     height: 231px;
@@ -244,6 +327,14 @@ textarea
     color: black;
     box-sizing: border-box;
     padding: 21px 30px;
+}
+
+@media (max-width: 800px) {
+    .input-text
+    {
+        width: 315px;
+    }
+    
 }
 
 ::placeholder
@@ -275,11 +366,7 @@ textarea
     font-size: 36px;
     width: 232px;
     height: 36px;
-}
-
-.iconify
-{
-    margin-right: 4px;
+    display: inline-block;
 }
 
 .first
