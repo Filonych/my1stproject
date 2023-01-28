@@ -90,7 +90,7 @@ body
 {
     #check-menu + span
     {
-            background: url(/img/Menu.svg) no-repeat;
+            background: url(./img/Menu.svg) no-repeat;
             position: absolute;
             left: 0; top: 0;
             width: 100%; height: 100%;
