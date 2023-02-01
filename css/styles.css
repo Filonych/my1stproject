@@ -1,4 +1,4 @@
-p, h1, h2, form, body
+p, h1, h2, h3, form, body
 {
 	margin: 0;
 	padding: 0;
@@ -6,6 +6,10 @@ p, h1, h2, form, body
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+}
+
+ul, ul li {
+	list-style: none;
 }
 
 body
@@ -20,6 +24,7 @@ body
     padding: 26px 50px;
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
 }
 
 .link
@@ -28,9 +33,6 @@ body
     color: black;
     font-size: 17px;
     margin-right: 20px;
-    position: relative;
-    top: 3px; 
-
 }
 
 @media (max-width: 800px) 
@@ -41,6 +43,11 @@ body
     }
 }
 
+.nav
+{
+    display: inline-flex;
+    margin: 0;
+}
 
 .logo__header
 {
@@ -90,7 +97,7 @@ body
 {
     #check-menu + span
     {
-            background: url(/img/Menu.svg) no-repeat;
+            background: url(../img/Menu.svg) no-repeat;
             position: absolute;
             left: 0; top: 0;
             width: 100%; height: 100%;
@@ -152,8 +159,6 @@ body
 
 .wrap
 {
-    font-family: 'Epilogue';
-    font-style: normal;
     font-size: 17px;
     line-height: 27px;
     display: flex;
@@ -196,8 +201,6 @@ body
 
 .job
 {
-    font-family: 'Epilogue';
-    font-style: normal;
     font-size: 17px;
     line-height: 27px;
     color: #2D2D2D; 
@@ -206,8 +209,6 @@ body
 
 .bio-text
 {
-    font-family: 'Epilogue';
-    font-style: normal;
     font-size: 17px;
     line-height: 27px;
     color: #2D2D2D; 
@@ -239,8 +240,6 @@ body
 
 .body-title-text
 {
-    font-family: 'Epilogue';
-    font-style: normal;
     font-weight: 500;
     font-size: 24px;
     line-height: 36px;
@@ -255,9 +254,8 @@ body
     margin: auto;
 }
 
-.odd
+.table tr:nth-child(odd)
 {
-    font-family: 'Epilogue';
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -266,13 +264,10 @@ body
     background: #009379;
     height: 36px;
     margin: 0;
-    text-align: left;
 }
 
-.even
+.table tr:nth-child(even)
 {
-    font-family: 'Epilogue';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
@@ -346,8 +341,6 @@ hr
 
 .contact-title
 {
-    font-family: 'Epilogue';
-    font-style: normal;
     font-weight: 600;
     font-size: 32px;
     line-height: 42px;
@@ -355,8 +348,6 @@ hr
 
 .contact-content
 {
-    font-family: 'Epilogue';
-    font-style: normal;
     font-weight: 400;
     font-size: 17px;
     line-height: 27px;
@@ -385,8 +376,6 @@ hr
     background: #F3F3F3;
     border: none;
     margin-bottom: 20px;
-    font-family: 'Epilogue';
-    font-style: normal;
     font-weight: 400;
     font-size: 17px;
     line-height: 27px;
@@ -410,8 +399,6 @@ hr
     background: #F3F3F3;
     border: none;
     resize: none;
-    font-family: 'Epilogue';
-    font-style: normal;
     font-weight: 400;
     font-size: 17px;
     line-height: 27px;
@@ -430,8 +417,6 @@ hr
 
 ::placeholder
 {
-    font-family: 'Epilogue';
-    font-style: normal;
     font-weight: 400;
     font-size: 17px;
     line-height: 27px;
@@ -444,8 +429,6 @@ hr
     height: 80px;
     background: #2D2D2D;
     margin-top: 40px;
-    font-family: 'Epilogue';
-    font-style: normal;
     font-weight: 600;
     font-size: 20px;
     line-height: 30px;
@@ -463,12 +446,13 @@ hr
 .first
 {
     min-height: 624px;
+    max-width: 1080px;
     display: flex;
-    gap: 28px;
     flex-wrap: wrap;
-    align-content: center;
+    align-items: center;
     justify-content: center;
-    margin: 0;
+    margin: auto;
+    gap: 28px;
 }
 
 @media (max-width: 800px) 
@@ -489,8 +473,6 @@ hr
 
 .branding
 {
-    font-family: 'Epilogue';
-    font-style: normal;
     font-weight: 600;
     font-size: 20px;
     line-height: 30px;   
@@ -499,8 +481,6 @@ hr
 
 .main_title
 {
-    font-family: 'Epilogue';
-    font-style: normal;
     font-weight: 600;
     font-size: 80px;
     line-height: 90px;
@@ -524,8 +504,6 @@ hr
 {
     .main_title_mobile
     {
-    font-family: 'Epilogue';
-    font-style: normal;
     font-weight: 600;
     font-size: 65px;
     line-height: 67px;
@@ -534,25 +512,38 @@ hr
     }
 }
 
-.circles
+.circles-wrap
 {
-    width: 1080px;
+    width: 495px;
     height: 424px;
 }
 
 @media (max-width: 800px)
 {
-    .circles
+    .circles-wrap
     {
         width: 315px;
         height: 269.82px;
     }
 }
 
+.circles
+{
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 800px)
+{
+    .circles
+    {
+        width: 100%;
+        height: 100%;
+    }
+}
+
 .caption
 {
-    font-family: 'Epilogue';
-    font-style: normal;
     font-weight: 400;
     font-size: 17px;
     line-height: 27px;
@@ -576,8 +567,6 @@ hr
 {
     .caption-mobile
     {
-        font-family: 'Epilogue';
-        font-style: normal;
         font-weight: 400;
         font-size: 17px;
         line-height: 27px;
@@ -601,6 +590,7 @@ hr
 {
     max-width: 1078px;
     height: 166.83px;
+    width: 100%;
     display: flex ;
     flex-wrap: wrap;
     align-content: center;
@@ -642,8 +632,6 @@ hr
     align-content: center;
     justify-content: center;
     gap: 125px;
-    font-family: 'Epilogue';
-    font-style: normal;
 }
 
 @media (max-width: 800px)
