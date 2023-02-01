@@ -15,11 +15,11 @@
         <div class="hey">  
             <a href="#" class="logo__header">Logo</a>
         </div> 
-        <div class="nav">
-            <a href="./index.html" class="link">About</a>
-            <a href="./Work.html" class="link">Work</a>
-            <a href="#footer" class="link">Contact</a>
-        </div>
+        <ul class="nav">
+            <li><a href="./index.html" class="link">About</a></li>
+            <li><a href="./Work.html" class="link">Work</a></li>
+            <li><a href="#footer" class="link">Contact</a></li>
+        </ul>
         <div class="nav-wrapper">
             <label class="label">
             <input type="checkbox" id="check-menu">
@@ -34,13 +34,13 @@
     </header>
     <section class="first">
         <div class="portfolio-title">
-            <p class="branding">Branding | Image making</p>
-            <p class="main_title">My awesome portfolio</p>
-            <p class="main_title_mobile">Visual Designer</p>
-            <p class="caption">And I made it myself! Yes. In Figma with Anima</p>
+            <h2 class="branding">Branding | Image making</h2>
+            <h1 class="main_title">My awesome portfolio</h1>
+            <h1 class="main_title_mobile">Visual Designer</h1>
+            <h3 class="caption">And I made it myself! Yes. In Figma with Anima</h3>
             <p class="caption-mobile">This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
         </div>
-        <div>
+        <div class="circles-wrap">
             <img class="circles" src=./img/circles.svg>
         </div>
     </section>
@@ -150,23 +150,27 @@
     </section>
     <hr>
     <footer id="footer" class="footer">
-        <div class="contact-info">
-            <h2 class="contact-title">Let’s work together</h2>
-            <p class="contact-content">This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
-            <wrap class="icons">
-                <span class="iconify" data-icon="bxl:discord"></span>
-                <span class="iconify" data-icon="bxl:facebook-square"></span>
-                <span class="iconify" data-icon="bxl:dribbble"></span>
-                <span class="iconify" data-icon="bxl:instagram"></span>
-                <span class="iconify" data-icon="bxl:behance"></span>
-            </wrap>
+        <div class="f-container">
+            <div class="contact-info">
+                <h2 class="contact-title">Let’s work together</h2>
+                <p class="contact-content">This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
+                <wrap class="icons">
+                    <span class="iconify" data-icon="bxl:discord"></span>
+                    <span class="iconify" data-icon="bxl:facebook-square"></span>
+                    <span class="iconify" data-icon="bxl:dribbble"></span>
+                    <span class="iconify" data-icon="bxl:instagram"></span>
+                    <span class="iconify" data-icon="bxl:behance"></span>
+                </wrap>
+            </div>
+            <div class="contact-form">
+                <form class="form">
+                    <input id="name" class="input" placeholder="Name">
+                    <input id="e-mail" class="input" placeholder="Email">
+                    <textarea id="text" class="input-text" rows="5" cols="20" placeholder="Type your message here"></textarea>
+                    <button type="submit" class="submit">Submit</button>
+                </form>
+            </div>
         </div>
-        <form class="form">
-            <input id="name" class="input" placeholder="Name">
-            <input id="e-mail" class="input" placeholder="Email">
-            <textarea id="text" class="input-text" rows="5" cols="20" placeholder="Type your message here"></textarea>
-            <button type="submit" class="submit">Submit</button>
-        </form>
     </footer>
 </body>
 </html>
